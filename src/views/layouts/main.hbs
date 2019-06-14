@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-
+      {{>navigations}}
   
 
-    <main class="container p-5">
+    <main class="container p-4">
       {{>errors}}
       {{>messages}}
+      
 
       {{{ body }}}
     </main>
