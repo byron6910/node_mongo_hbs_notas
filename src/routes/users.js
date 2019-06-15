@@ -48,9 +48,10 @@ router.post('/users/signup',async (req,res)=>{
     }
 });
 
-router.get('/logout',(req,res)=>{
+router.get('/users/logout',(req,res)=>{
     req.logOut();
-    res.redirect('/');
+    req.flash('success_msg','HAs salido de la sesion');
+    res.redirect('/users/signin');
 });
 
 
